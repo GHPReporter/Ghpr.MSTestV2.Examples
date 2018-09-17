@@ -2,7 +2,7 @@
 using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Ghpr.MSTest.Examples.Cat1
+namespace Ghpr.MSTestV2.Examples.Cat1
 {
     [TestClass]
     public class TestClass1

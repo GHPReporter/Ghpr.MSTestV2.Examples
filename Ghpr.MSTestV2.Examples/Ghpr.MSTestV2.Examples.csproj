@@ -9,8 +9,8 @@
     <ProjectGuid>{AD31FF21-F69E-4AF3-8A0E-89FA3A4FE002}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ghpr.MSTest.Examples</RootNamespace>
-    <AssemblyName>Ghpr.MSTest.Examples</AssemblyName>
+    <RootNamespace>Ghpr.MSTestV2.Examples</RootNamespace>
+    <AssemblyName>Ghpr.MSTestV2.Examples</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -94,20 +94,6 @@
   <ItemGroup>
     <Compile Include="Cat1\DataDriven.cs" />
     <Compile Include="Cat1\TestClass1.cs" />
-    <Compile Include="Cat1\TestClass2.cs" />
-    <Compile Include="Cat1\TestClass3.cs" />
-    <Compile Include="Cat1\TestClass4.cs" />
-    <Compile Include="Cat1\TestClass5.cs" />
-    <Compile Include="Cat2\TestClass06.cs" />
-    <Compile Include="Cat2\TestClass07.cs" />
-    <Compile Include="Cat2\TestClass08.cs" />
-    <Compile Include="Cat2\TestClass09.cs" />
-    <Compile Include="Cat2\TestClass10.cs" />
-    <Compile Include="Cat3\TestClass11.cs" />
-    <Compile Include="Cat3\TestClass12.cs" />
-    <Compile Include="Cat3\TestClass13.cs" />
-    <Compile Include="Cat3\TestClass14.cs" />
-    <Compile Include="Cat3\TestClass15.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResultHelper.cs" />
@@ -130,7 +116,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>if $(ConfigurationName) == Debug (cd "$(SolutionDir)")
-if $(ConfigurationName) == Debug ("$(DevEnvDir)mstest.exe" /testcontainer:$(TargetPath) /resultsfile:testResults.trx /usestderr /noisolation)
+if $(ConfigurationName) == Debug ("$(DevEnvDir)CommonExtensions\Microsoft\TestWindow\vstest.console.exe" $(SolutionDir)bin\debug\Ghpr.MSTestV2.Examples.dll /Logger:trx)
 </PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>

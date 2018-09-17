@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Ghpr.MSTest.Examples
+namespace Ghpr.MSTestV2.Examples
 {
     [TestClass]
     public class Class1
