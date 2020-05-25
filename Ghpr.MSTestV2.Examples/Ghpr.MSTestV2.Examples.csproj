@@ -47,11 +47,11 @@
     <Reference Include="Ghpr.LocalFileSystem, Version=0.9.10.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Ghpr.LocalFileSystem.0.9.10\lib\net452\Ghpr.LocalFileSystem.dll</HintPath>
     </Reference>
-    <Reference Include="Ghpr.MSTestV2, Version=0.9.9.9, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Ghpr.MSTestV2.0.9.11\lib\net452\Ghpr.MSTestV2.dll</HintPath>
+    <Reference Include="Ghpr.MSTestV2, Version=0.9.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Ghpr.MSTestV2.0.9.12\lib\net452\Ghpr.MSTestV2.dll</HintPath>
     </Reference>
-    <Reference Include="Ghpr.NUnit, Version=0.9.10.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Ghpr.NUnit.0.9.11\lib\net452\Ghpr.NUnit.dll</HintPath>
+    <Reference Include="Ghpr.NUnit, Version=0.9.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Ghpr.NUnit.0.9.12\lib\net452\Ghpr.NUnit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>packages\MSTest.TestFramework.2.1.1\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
@@ -97,18 +97,18 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Ghpr.Core.Settings.json">
+    <Content Include="Ghpr.Core.Settings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Ghpr.MSTestV2.Settings.json">
+    </Content>
+    <Content Include="Ghpr.MSTestV2.Settings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Ghpr.NUnit.addins">
+    </Content>
+    <Content Include="Ghpr.NUnit.addins">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Ghpr.NUnit.Settings.json">
+    </Content>
+    <Content Include="Ghpr.NUnit.Settings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Content>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
