@@ -18,7 +18,7 @@ namespace Ghpr.MSTestV2.Examples.Cat1
         public void RandomDurationPassedTest()
         {
             var r = new Random();
-            Thread.Sleep(r.Next(700));
+            Thread.Sleep(r.Next(1000, 5000));
             Assert.AreEqual(1, 1);
         }
 
